@@ -14,15 +14,14 @@ page_soup = Soup(page_html, "html.parser")
 #grabs each product Total = 12 /test containers.len
 containers = page_soup.findAll("div",{"class":"item-container"})
 
-for container in containers:
-	brand = container.div.div.a.img["title"]
-	
+for container in containers:	
+	#brand = container.div.div.a.img["title"]
 	title_container =container.findAll("a", {"class":"item-title"})
 	product_name = title_container[0].text
 
 	shipping_container = container.findAll("li", {"class":"price-ship"})
 	shipping = shipping_container[0].text.strip()
 
-	print("brand"+ brand)
-	print("product_name" + product_name)
-	print("shipping" +shipping)
+	#print("brand"+ brand)
+	print("product_name :" + " " + product_name)
+	print("shipping :" + " " + shipping)
