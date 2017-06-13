@@ -1,4 +1,13 @@
-*Technologies*
+#**Technologies**
 
+1. _Beautiful Soup_
+1. _Python_ 
 
-1. Beautiful Soup 
+###PROCEDURE
+
+*Open Connection
+*Grab Page Url
+*Parse HTML 
+*Grab Products 
+*Loop through Products 
+*Print 
