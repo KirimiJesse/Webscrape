@@ -1,13 +1,15 @@
-**Technologies**
+#  **Technologies**
 
 1. _Beautiful Soup_
 1. _Python_ 
 
-*PROCEDURE*
+##  **PROCEDURE**
 
-1.Open Connection
-1.Grab Page Url
-1.Parse HTML 
-1.Grab Products 
-1.Loop through Products 
-1.Print 
+1. _Open Connection_
+1. _Grab Page Url_
+1. _Parse HTML _
+1. _Grab Products _
+1. _Loop through Products _
+1. _Print _
+1. _Save data to CSV file_ :joy:
+
