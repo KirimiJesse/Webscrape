@@ -18,7 +18,7 @@ f = open(filename, "w")
 
 headers = "product_name, shipping\n"
 
-f.write(headers)
+f.write(headers)#writing data to csv file
 
 for container in containers:	
 	#Somehow brand returns an Attribute "NONE" Error so I improvised "Hope it works"
@@ -29,7 +29,7 @@ for container in containers:
 	shipping_container = container.findAll("li", {"class":"price-ship"})
 	shipping = shipping_container[0].text.strip()
 
-	brand = product_name.split()[0]
+	brand = product_name.split()[0]#original brand scraping did not work but I Improvised 
 
 	print("Brand : "+ " " + brand)
 	print("Product_name :" + " " + product_name)
@@ -37,4 +37,4 @@ for container in containers:
 
 	f.write(brand + "," + product_name.replace(",", "/") + "," + shipping + "\n")
 
-f.close()
+f.close()#you need to close in order for it to work 
